@@ -23,6 +23,7 @@ RUN apt-get update
 
 # Install MongoDB package (.deb)
 RUN apt-get install -y mongodb-10gen
+RUN apt-get install -y mysql-server
 
 # Create the default data directory
 RUN mkdir -p /data/db
